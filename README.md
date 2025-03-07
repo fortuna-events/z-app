@@ -37,6 +37,16 @@ Url encoded app template
 
 <!-- TODO: 6. remove this part -->
 
+```bash
+git clone git@github.com/clement-gouin/z-app.git {PROJECT}
+cd {PROJECT}
+git remote rename origin template
+git remote add origin {PROJECT REMOTE}
+# everytime you want to update your fork
+git fetch --all
+git merge template/master
+```
+
 > Every task is indicated with a TODO
 
 1. [ ] Rename app in [README.md](./README.md), [main.js](./main.js) and [index.html](./index.html)
