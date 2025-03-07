@@ -1,7 +1,9 @@
 # [Z] App (template)
 *Working template for URL encoded app*
 
-<!-- TODO: 1. rename app -->
+<!-- TODO: 1. rename app (and tool URL) -->
+
+> Part of the [Z-Apps](https://github.com/clement-gouin/z-app)
 
 ### [Tool link](https://clement-gouin.github.io/z-app/)
 
@@ -24,6 +26,8 @@ After that each link is defined as follows:
 ## Samples
 
 <!-- TODO: 4. change sample -->
+
+[Sample](https://clement-gouin.github.io/z-app/?z=AARDdPWDAjZNDFQkOAogtlABzB42NXAcGATucbREAeBYGgcWAABdl5z6OpNKE1gCCTlB94kPNYEECgGjAKbpHow1DAKPuKMdXJB4DwSAeAgCwXHz0WAlLAx0BghARSZCwegxgdgpABgNwJoK)
 
 ```txt
 Url encoded app template
@@ -49,7 +53,7 @@ git merge template/master
 
 > Every task is indicated with a TODO
 
-1. [ ] Rename app in [README.md](./README.md), [main.js](./main.js) and [index.html](./index.html)
+1. [ ] Rename app in [README.md](./README.md), [index.html](./index.html) and [package.json](./package.json)
 2. [ ] Change app hue and saturation in [style.css](./style.css)
 3. [ ] Change data format in [README.md](./README.md) and [main.js](./main.js)
 4. [ ] Change sample in [README.md](./README.md) and [main.js](./main.js)
@@ -58,11 +62,14 @@ git merge template/master
 
 ## Apps using this template
 
-* [This repository](https://github.com/clement-gouin/z-app)
+<!-- TODO: 6. remove this part -->
+
+* [Z-App](https://github.com/clement-gouin/z-app)
 * [Treasure-Finder](https://github.com/clement-gouin/z-treasure-finder)
 * [On-The-Quizz](https://github.com/clement-gouin/z-on-the-quizz)
-* [Cross-Roads](https://github.com/clement-gouin/z-on-the-quizz)
-* [Dice-Roller](https://github.com/clement-gouin/z-cross-roads)
+* [Cross-Roads](https://github.com/clement-gouin/z-cross-roads)
+* [Dice-Roller](https://github.com/clement-gouin/z-dice-roller)
+* [Hero-Quest](https://github.com/clement-gouin/z-hero-quest)
 
 ## Tips
 

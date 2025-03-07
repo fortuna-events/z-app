@@ -125,7 +125,8 @@ const app = createApp({
           return HELP_PART[(index - HELP_HEADER.length) % HELP_PART.length];
         })
         .join("\n");
-      this.editor.numbersCols = lines.length.toString().length + 1;
+      this.editor.numbersCols =
+        this.editor.numbersText.length.toString().length + 1;
     },
     editorScroll() {
       this.$refs.numbers.scrollTop = this.$refs.code.scrollTop;
