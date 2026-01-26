@@ -55,9 +55,9 @@ git merge template/master
 
 1. [ ] Rename app in [README.md](./README.md), [index.html](./index.html) and [package.json](./package.json)
 2. [ ] Change app hue and saturation in [style.css](./style.css)
-3. [ ] Change data format in [README.md](./README.md) and [main.js](./main.js)
-4. [ ] Change sample in [README.md](./README.md) and [main.js](./main.js)
-5. [ ] Implement your custom logic in [main.js](./main.js) and [index.html](./index.html)
+3. [ ] Change data format in [README.md](./README.md) and [constants.ts](./src/constants.js)
+4. [ ] Change sample in [README.md](./README.md) and [App.vue](./src/App.vue)
+5. [ ] Implement your custom logic in [interfaces.ts](./src/interfaces.ts), [constants.ts](./src/constants.ts), [App.vue](./src/App.vue) and [parser.ts](./src/lib/parser.ts)
 6. [ ] Remove this part and all TODO
 
 ## Apps using this template

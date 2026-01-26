@@ -1,32 +1,24 @@
-import eslintConfigPrettier from "eslint-config-prettier";
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import { globalIgnores } from "eslint/config";
+import {
+  defineConfigWithVueTs,
+  vueTsConfigs,
+} from "@vue/eslint-config-typescript";
 import pluginVue from "eslint-plugin-vue";
+import skipFormatting from "@vue/eslint-config-prettier/skip-formatting";
+import { configureVueProject } from "@vue/eslint-config-typescript";
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
+configureVueProject({ scriptLangs: ["ts", "tsx"] });
+
+export default defineConfigWithVueTs(
   {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        lucide: "readonly",
-        LZString: "readonly",
-      },
-    },
+    name: "app/files-to-lint",
+    files: ["**/*.{ts,mts,tsx,vue}"],
   },
-  pluginJs.configs.all,
-  ...pluginVue.configs["flat/recommended"],
-  {
-    rules: {
-      "no-magic-numbers": "off",
-      "sort-keys": "off",
-      "no-warning-comments": "off",
-      "no-ternary": "off",
-      "one-var": "off",
-      "max-statements": ["warn", 50],
-      "max-params": ["warn", 5],
-      "max-lines": "off",
-    },
-  },
-  eslintConfigPrettier,
-];
+
+  globalIgnores(["**/dist/**"]),
+
+  pluginVue.configs["flat/recommended"],
+  vueTsConfigs.strictTypeChecked,
+  vueTsConfigs.stylisticTypeChecked,
+  skipFormatting,
+);
