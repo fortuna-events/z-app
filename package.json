@@ -8,8 +8,8 @@
         "preview": "vite preview",
         "build-only": "vite build",
         "type-check": "vue-tsc --build",
-        "lint": "eslint . --cache",
-        "lint-fix": "eslint . --fix --cache",
+        "lint": "eslint src/ --cache",
+        "lint-fix": "eslint src/ --fix --cache",
         "format": "prettier --write src/"
     },
     "repository": {

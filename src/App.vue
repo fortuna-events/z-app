@@ -5,7 +5,7 @@ import { DEFAULT_PAGE } from "./constants";
 import { parsePage } from "./lib/parser";
 import { decodeData, encodeDataToUrl } from "./lib/encoder";
 import { updateIcons } from "./lib/icons";
-import Editor from "./Editor.vue";
+import ZEditor from "./ZEditor.vue";
 
 const visible = ref<boolean>(false);
 const debug = ref<boolean>(true);
@@ -55,7 +55,7 @@ watch(debugData, dataChanged);
                 <i icon="cog"></i>
                 Z-App
             </h1>
-            <Editor v-model="debugData"></Editor>
+            <ZEditor v-model="debugData"></ZEditor>
             <a v-if="debugUrl" :href="debugUrl" target="_blank">
                 <i icon="link"></i>
                 Output link

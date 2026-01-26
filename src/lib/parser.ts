@@ -16,7 +16,7 @@ export function parseEditor(value: string): Editor {
     }
     const lines = Array(size).fill(0);
     editor.numbersText = debugDataSplit
-        .map((_value, index) => `${index + 1}.`)
+        .map((_value, index) => (index + 1).toString() + `.`)
         .join("\n");
     editor.overlayText = lines
         .map((_value, index) => {
@@ -43,7 +43,7 @@ export function parsePage(value: string): Page {
         parsed.error = true;
         return parsed;
     }
-    parsed.header = parts.shift() as string;
+    parsed.header = parts.shift()!;
     // Convert header to simple title of not html
     if (!/<[^>]*>/u.test(parsed.header)) {
         parsed.header = `<h1>${parsed.header}</h1>`;
@@ -51,7 +51,7 @@ export function parsePage(value: string): Page {
     // TODO: 5. implement custom logic
     parsed.parts = [];
     while (parts.length) {
-        parsed.parts.push(parts.shift() as string);
+        parsed.parts.push(parts.shift()!);
     }
     return parsed;
 }

@@ -33,17 +33,17 @@ onBeforeMount(() => {
 <template>
     <div class="editor">
         <textarea
+            ref="numbers"
+            v-model="editor.numbersText"
             class="numbers"
             :cols="editor.numbersCols"
             rows="10"
             readonly
-            ref="numbers"
-            v-model="editor.numbersText"
         ></textarea>
         <textarea
-            class="code"
-            v-model="debugData"
             ref="code"
+            v-model="debugData"
+            class="code"
             rows="10"
             @scroll="editorScroll"
         ></textarea>
@@ -51,10 +51,10 @@ onBeforeMount(() => {
             <textarea :cols="editor.numbersCols" rows="10" readonly></textarea>
             <textarea
                 ref="overlay"
+                v-model="editor.overlayText"
                 class="code"
                 rows="10"
                 readonly
-                v-model="editor.overlayText"
             ></textarea>
         </div>
     </div>
