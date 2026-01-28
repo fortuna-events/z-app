@@ -19,7 +19,7 @@ Header (1-2 line):
 2?   Hue, Saturation (optional, "180, 30%" by default)
 ```
 
-After that each link is defined as follows:
+After that each part is defined as follows:
 ```txt
 1    Data (html)
 ```
