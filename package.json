@@ -14,11 +14,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/clement-gouin/z-app.git"
+        "url": "git+https://github.com/fortuna-events/z-app.git"
     },
     "author": "clement-gouin",
     "license": "ISC",
-    "homepage": "https://github.com/clement-gouin/z-app#readme",
+    "homepage": "https://github.com/fortuna-events/z-app#readme",
     "dependencies": {
         "lucide": "^0.562.0",
         "lz-string": "^1.5.0",

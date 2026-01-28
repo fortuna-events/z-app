@@ -3,9 +3,9 @@
 
 <!-- TODO: 1. rename app (and tool URL) -->
 
-> Part of the [Z-Apps](https://github.com/clement-gouin/z-app)
+> Part of the [Z-Apps](https://github.com/fortuna-events/z-app)
 
-### [Tool link](https://clement-gouin.github.io/z-app/)
+### [Tool link](https://fortuna-events.github.io/z-app/)
 
 ## Data format
 
@@ -28,7 +28,7 @@ After that each link is defined as follows:
 
 <!-- TODO: 4. change sample -->
 
-[Sample](https://clement-gouin.github.io/z-app/?z=AARDdPWDAjZNDFQkOAogtlABzB42NXAcGATucbREAeBYGgcWAABdl5z6OpNKE1gCCTlB94kPNYEECgGjAKbpHow1DAKPuKMdXJB4DwSAeAgCwXHz0WAlLAx0BghARSZCwegxgdgpABgNwJoK)
+[Sample](https://fortuna-events.github.io/z-app/?z=AARDdPWDAjZNDFQkOAogtlABzB42NXAcGATucbREAeBYGgcWAABdl5z6OpNKE1gCCTlB94kPNYEECgGjAKbpHow1DAKPuKMdXJB4DwSAeAgCwXHz0WAlLAx0BghARSZCwegxgdgpABgNwJoK)
 
 ```txt
 Url encoded app template
@@ -43,7 +43,7 @@ Url encoded app template
 <!-- TODO: 6. remove this part -->
 
 ```bash
-git clone git@github.com/clement-gouin/z-app.git {PROJECT}
+git clone git@github.com/fortuna-events/z-app.git {PROJECT}
 cd {PROJECT}
 git remote rename origin template
 git remote add origin {PROJECT REMOTE}
@@ -65,12 +65,12 @@ git merge template/master
 
 <!-- TODO: 6. remove this part -->
 
-* [Z-App](https://github.com/clement-gouin/z-app)
-* [Treasure-Finder](https://github.com/clement-gouin/z-treasure-finder)
-* [On-The-Quizz](https://github.com/clement-gouin/z-on-the-quizz)
-* [Cross-Roads](https://github.com/clement-gouin/z-cross-roads)
-* [Dice-Roller](https://github.com/clement-gouin/z-dice-roller)
-* [Hero-Quest](https://github.com/clement-gouin/z-hero-quest)
+* [Z-App](https://github.com/fortuna-events/z-app)
+* [Treasure-Finder](https://github.com/fortuna-events/z-treasure-finder)
+* [On-The-Quizz](https://github.com/fortuna-events/z-on-the-quizz)
+* [Cross-Roads](https://github.com/fortuna-events/z-cross-roads)
+* [Dice-Roller](https://github.com/fortuna-events/z-dice-roller)
+* [Hero-Quest](https://github.com/fortuna-events/z-hero-quest)
 
 ## Tips
 
