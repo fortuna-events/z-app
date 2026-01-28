@@ -71,7 +71,7 @@ git branch -D master
 git checkout -b master template/master
 bun install
 # re-code logic by checking online code
-git push origin master --force
+git push origin master v1 --force
 ```
 
 ## Apps using this template
