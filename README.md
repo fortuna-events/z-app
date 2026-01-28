@@ -80,7 +80,9 @@ git branch -D master
 git checkout -b master template/master
 bun install
 # re-code logic by checking online code
+git commit -a -m 'v2'
 git push origin master v1 --force
+git remote --remove template
 ```
 
 ## Apps using this template
