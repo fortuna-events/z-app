@@ -38,6 +38,15 @@ Url encoded app template
 <a href="https://google.com">link</a>
 ```
 
+[Sample](https://fortuna-events.github.io/z-app/?z=AABCdm4koM3gXXxowDCIBFEiNeiCvIWP5Bf4ogxIWBATAQkwjwwmIAwKo6JAgjxkHGC9c6nfs3F68aOCMR5RwqeYtr2z8AcEEFcag-DzEBeRZTVAACUxFHPbYYBHsfr7GBgzgCuIhEyoAtGwC3GgTYYslC2twNAwSYgVHGe4WQqzFfcxskCRTcey0aAEELksSQZwCNsAGCbgTG6AA1YpmazBgHe4CAKQwRQs1MAQReI020qNtAoQOvMC0CqhjMhkDgXAOsZBD4akCoFHAoRDAGAwMAoAgAu34edCgaSqloTjSpsEYCA7AgRLmeA4CliCGpENKKhB04sHwxZAXBMGgwIA4GxFglA3BEAMFYDwBgtghgyAfAjwCwD)
+
+```txt
+<h1>Sample with <b>custom CSS classes</b> and <i>custom color</i></h1>
+30, 80%
+<a class='button purple-300' href='https://google.com'><i icon=link></i> link with icons</a>
+<div class='admonition success'><p class=admonition-title>Title</p><p>Content</p><div class=progress><div class=progress-bar style="width:25%"><p class=progress-label>25%</p></div></div></div>
+```
+
 ## Use this template
 
 <!-- TODO: 6. remove this part -->
@@ -89,3 +98,6 @@ git push origin master v1 --force
 
 * [Material design colors](https://materialui.co/colors/) are available, you can use `class="red-500"` on your HTML
 * [Lucide icons](https://lucide.dev/icons) are available, you can use `<i icon=house></i>` on your HTML
+* The `.button` class make links more beautifuls (can also be `.disabled` or colored `amber-300`)
+* Admonitions can be made with things like `<div class='admonition success'><p class=admonition-title>Title</p><p>Content</p></div>`
+* Progress bars can be made with things like `<div class=progress><div class=progress-bar style="width:25%"><p class=progress-label>25%</p></div></div>`

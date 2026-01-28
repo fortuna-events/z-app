@@ -87,12 +87,6 @@ CUSTOM STYLE
     /* https://materialui.co/colors/ */
     --hue-primary: 0;
     --sat-primary: 0%;
-    --background: hsl(var(--hue-primary), var(--sat-primary), 96%);
-    --background-primary: hsl(var(--hue-primary), var(--sat-primary), 93%);
-    --background-secondary: hsl(var(--hue-primary), var(--sat-primary), 90%);
-    --color-primary: hsl(var(--hue-primary), var(--sat-primary), 50%);
-    --text-primary: hsl(var(--hue-primary), var(--sat-primary), 25%);
-    --text-secondary: hsl(var(--hue-primary), var(--sat-primary), 30%);
 }
 
 /*
@@ -107,18 +101,18 @@ html,
 body {
     padding: 0;
     max-width: 100%;
-    color: var(--text-primary);
+    color: hsl(var(--hue-primary), var(--sat-primary), 25%);
     font-family: "Roboto", Verdana, serif;
 }
 
 body {
-    background-color: var(--background);
+    background-color: hsl(var(--hue-primary), var(--sat-primary), 96%);
 }
 
 main {
     padding: 1.5rem;
     margin: auto;
-    background-color: var(--background-primary);
+    background-color: hsl(var(--hue-primary), var(--sat-primary), 93%);
     min-height: 100vh;
 }
 
@@ -132,7 +126,7 @@ p,
 ul,
 ol {
     margin-bottom: 2em;
-    color: var(--text-secondary);
+    color: hsl(var(--hue-primary), var(--sat-primary), 30%);
 }
 
 textarea,
@@ -231,23 +225,23 @@ pre {
   border-bottom: 1px solid hsl(var(--hue-primary), var(--sat-primary), 60%);
 }
 
-.admonition.danger,
-.admonition.error,
-.admonition.red {
+.danger,
+.error,
+.red {
   --hue-primary: 4.11;
   --sat-primary: 89.62%;
 }
 
-.admonition.success,
-.admonition.ok,
-.admonition.green {
+.success,
+.ok,
+.green {
   --hue-primary: 122.42;
   --sat-primary: 39.44%;
 }
 
-.admonition.warning,
-.admonition.warn,
-.admonition.orange {
+.warning,
+.warn,
+.orange {
   --hue-primary: 35.76;
   --sat-primary: 100%;
 }
