@@ -23,7 +23,7 @@ export const SAMPLE_DATA =
 
 // TODO: 5. implement custom logic
 export const DEFAULT_PAGE: Page = {
-    error: false,
+    error: null,
     header: "",
     hasColor: true,
     parts: [],

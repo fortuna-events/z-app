@@ -6,7 +6,7 @@ export interface Editor {
 
 // TODO: 5. implement custom logic
 export interface Page {
-    error: boolean;
+    error: string | null;
     header: string;
     hasColor: boolean;
     parts: string[];

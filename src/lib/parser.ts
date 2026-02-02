@@ -42,8 +42,8 @@ export function parseEditor(value: string, parsed: Page): Editor {
 export function parsePage(value: string): Page {
     const parsed = clone(DEFAULT_PAGE);
     const parts = value.split("\n");
-    if (parts.length < 1) {
-        parsed.error = true;
+    if (parts.length < 1 || !parts[0]?.length) {
+        parsed.error = 'no data';
         return parsed;
     }
     parsed.header = parts.shift()!;
@@ -52,13 +52,13 @@ export function parsePage(value: string): Page {
         parsed.header = `<h1>${parsed.header}</h1>`;
     }
     // parse color if found
-    if (parts[0]?.length && /^\d+(.\d+)?,\s+\d+(.\d+)?%$/u.test(parts[0])) {
+    if (parts[0].length && /^\d+(.\d+)?,\s+\d+(.\d+)?%$/u.test(parts[0])) {
         const rawPart = parts.shift()!.split(",");
         changeDocumentColor(
             rawPart[0] ?? DEFAULT_COLOR_HUE,
             rawPart[1] ?? DEFAULT_COLOR_SAT,
         );
-    } else if (parts[0]?.length) {
+    } else if (parts[0].length) {
         // not a color
         parsed.hasColor = false;
         changeDocumentColor(DEFAULT_COLOR_HUE, DEFAULT_COLOR_SAT);

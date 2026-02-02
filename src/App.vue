@@ -24,7 +24,7 @@ onBeforeMount(() => {
     if (url.searchParams.get("z") !== null) {
         debugData.value = decodeData(url.searchParams.get("z") ?? "");
         parsed.value = parsePage(debugData.value);
-        debug.value = parsed.value.error;
+        debug.value = parsed.value.error !== null;
     }
 
     if (debug.value) {
@@ -53,7 +53,7 @@ watch(debugData, dataChanged);
                 Z-App
             </h1>
             <ZEditor v-model="debugData" :parsed="parsed"></ZEditor>
-            <a v-if="debugUrl" :href="debugUrl" target="_blank">
+            <a v-if="debugUrl && parsed.error === null" :href="debugUrl" target="_blank">
                 <i icon="link"></i>
                 Output link
             </a>

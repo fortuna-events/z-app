@@ -51,6 +51,7 @@ onBeforeMount(() => {
             v-model="debugData"
             class="code"
             rows="10"
+            :class="parsed.error !== null ? 'error' : ''"
             @scroll="editorScroll"
         ></textarea>
         <div class="overlay">
@@ -64,15 +65,8 @@ onBeforeMount(() => {
             ></textarea>
         </div>
     </div>
-    <div class="message">
-        <template v-if="parsed.error">
-            Parsing failed
-            <i icon="file-exclamation-point"></i>
-        </template>
-        <template v-else>
-            Parsing OK
-            <i icon="file-check"></i>
-        </template>
+    <div v-if="parsed.error" class="message">
+        {{ parsed.error }}
     </div>
 </template>
 
@@ -117,7 +111,12 @@ onBeforeMount(() => {
     background: none;
 }
 
+textarea.error {
+    border: 1px solid #f44336;
+}
+
 .message {
     text-align: right;
+    color: #f44336;
 }
 </style>
