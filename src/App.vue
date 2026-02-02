@@ -53,7 +53,11 @@ watch(debugData, dataChanged);
                 Z-App
             </h1>
             <ZEditor v-model="debugData" :parsed="parsed"></ZEditor>
-            <a v-if="debugUrl && parsed.error === null" :href="debugUrl" target="_blank">
+            <a
+                v-if="debugUrl && parsed.error === null"
+                :href="debugUrl"
+                target="_blank"
+            >
                 <i icon="link"></i>
                 Output link
             </a>
