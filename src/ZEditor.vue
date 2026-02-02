@@ -64,6 +64,16 @@ onBeforeMount(() => {
             ></textarea>
         </div>
     </div>
+    <div class="message">
+        <template v-if="parsed.error">
+            Parsing failed
+            <i icon="file-exclamation-point"></i>
+        </template>
+        <template v-else>
+            Parsing OK
+            <i icon="file-check"></i>
+        </template>
+    </div>
 </template>
 
 <style scoped>
@@ -105,5 +115,9 @@ onBeforeMount(() => {
     border: 1px solid #0000;
     overflow: hidden;
     background: none;
+}
+
+.message {
+    text-align: right;
 }
 </style>
