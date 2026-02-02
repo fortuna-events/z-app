@@ -5,7 +5,7 @@
 
 > Part of the [Z-Apps](https://github.com/fortuna-events/z-app)
 
-### [Tool link](https://fortuna-events.github.io/z-app/)
+### [Tool link](https://app.fortuna-events.fr)
 
 ## Data format
 
@@ -28,7 +28,7 @@ After that each part is defined as follows:
 
 <!-- TODO: 4. change sample -->
 
-[Sample 1](https://fortuna-events.github.io/z-app/?z=AARDdPWDAjZNDFQkOAogtlABzB42NXAcGATucbREAeBYGgcWAABdl5z6OpNKE1gCCTlB94kPNYEECgGjAKbpHow1DAKPuKMdXJB4DwSAeAgCwXHz0WAlLAx0BghARSZCwegxgdgpABgNwJoK)
+[Sample 1](https://app.fortuna-events.fr?z=AARDdPWDAjZNDFQkOAogtlABzB42NXAcGATucbREAeBYGgcWAABdl5z6OpNKE1gCCTlB94kPNYEECgGjAKbpHow1DAKPuKMdXJB4DwSAeAgCwXHz0WAlLAx0BghARSZCwegxgdgpABgNwJoK)
 
 ```txt
 Url encoded app template
@@ -38,7 +38,7 @@ Url encoded app template
 <a href="https://google.com">link</a>
 ```
 
-[Sample 2](https://fortuna-events.github.io/z-app/?z=AABCdm4koM3gXXxowDCIBFEiNeiCvIWP5Bf4ogxIWBATAQkwjwwmIAwKo6JAgjxkHGC9c6nfs3F68aOCMR5RwqeYtr2z8AcEEFcag-DzEBeRZTVAACUxFHPbYYBHsfr7GBgzgCuIhEyoAtGwC3GgTYYslC2twNAwSYgVHGe4WQqzFfcxskCRTcey0aAEELksSQZwCNsAGCbgTG6AA1YpmazBgHe4CAKQwRQs1MAQReI020qNtAoQOvMC0CqhjMhkDgXAOsZBD4akCoFHAoRDAGAwMAoAgAu34edCgaSqloTjSpsEYCA7AgRLmeA4CliCGpENKKhB04sHwxZAXBMGgwIA4GxFglA3BEAMFYDwBgtghgyAfAjwCwD)
+[Sample 2](https://app.fortuna-events.fr?z=AABCdm4koM3gXXxowDCIBFEiNeiCvIWP5Bf4ogxIWBATAQkwjwwmIAwKo6JAgjxkHGC9c6nfs3F68aOCMR5RwqeYtr2z8AcEEFcag-DzEBeRZTVAACUxFHPbYYBHsfr7GBgzgCuIhEyoAtGwC3GgTYYslC2twNAwSYgVHGe4WQqzFfcxskCRTcey0aAEELksSQZwCNsAGCbgTG6AA1YpmazBgHe4CAKQwRQs1MAQReI020qNtAoQOvMC0CqhjMhkDgXAOsZBD4akCoFHAoRDAGAwMAoAgAu34edCgaSqloTjSpsEYCA7AgRLmeA4CliCGpENKKhB04sHwxZAXBMGgwIA4GxFglA3BEAMFYDwBgtghgyAfAjwCwD)
 
 ```txt
 <h1>Sample with <b>custom CSS classes</b> and <i>custom color</i></h1>

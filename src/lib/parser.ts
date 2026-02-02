@@ -29,11 +29,10 @@ export function parseEditor(value: string, parsed: Page): Editor {
                 (debugDataSplit[index] ?? "").trim().length
             ) {
                 return " ".repeat((debugDataSplit[index] ?? "").length);
-            }
-            if (headerSize > index) {
+            } else if (headerSize > index) {
                 return HELP_HEADER[index];
             }
-            return HELP_PART[(index - HELP_HEADER.length) % HELP_PART.length];
+            return HELP_PART[(index - headerSize) % HELP_PART.length];
         })
         .join("\n");
     editor.numbersCols = editor.numbersText.length.toString().length + 1;
