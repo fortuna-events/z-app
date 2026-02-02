@@ -51,6 +51,7 @@ function parseRegex(
     regex: RegExp,
     success: (value: string) => void,
     failure: (empty: boolean) => void,
+    consume = false,
 ): void {
     if (!parts.length || !parts[0]?.length) {
         parts.shift(); // consume empty line
@@ -61,6 +62,10 @@ function parseRegex(
     if (regex.test(parts[0])) {
         success(parts.shift()!);
         return;
+    }
+
+    if (consume) {
+        parts.shift();
     }
 
     failure(false);
