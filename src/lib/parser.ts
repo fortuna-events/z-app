@@ -87,6 +87,7 @@ export function parsePage(value: string): Page {
         },
         (empty: boolean) => {
             parsed.hasColor = empty;
+            changeDocumentColor(DEFAULT_COLOR_HUE, DEFAULT_COLOR_SAT);
         },
     );
     // TODO: 5. implement custom logic
